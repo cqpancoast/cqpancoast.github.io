@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="./theme/css/screen.css" type="text/css" />
         <link rel="stylesheet" href="./theme/css/pygments.css" type="text/css" />
 
+        <script type="text/javascript" src="./theme/python/brython.js" />
+        <script type="text/javascript" src="./theme/python/brython_stdlib.js" />
 
     </head>
-    <body>
+    <body onload="brython()">
 <div id="header">
             <ul id="nav">
                     <li><a href="/blog/">Blog</a></li>
@@ -19,9 +21,13 @@
 
             </ul>
             <div class="header_box">
-                <h1><a href="."><img src="https://cqpancoast.com/theme/images/beast_logo.png", alt="CQPancoast", width="50", height="50" /></a></h1>
-                <!-- <h1><a href=".">CQPancoast</a></h1> -->                <h2>All about dust.</h2>
-
+                <h1>
+                    <a href=".">
+                        <img src="./theme/images/forbidden_logo.png", alt="CQPancoast", width="50", height="50" />
+                        <img src="./theme/images/CQP.png" alt="CQPancoast" width="210" height="40" />
+                    </a>
+                </h1>                <h2 id="subtitle"></h2>
+                <script type="text/python" src="./theme/python/subtitlegen.py" />
             </div>
         </div>
         <div id="wrapper">

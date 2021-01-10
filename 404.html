@@ -8,12 +8,16 @@
   <link href="./favicon.ico" rel="shortcut icon"/>
   <link href="./theme/css/screen.css" rel="stylesheet" type="text/css"/>
   <link href="./theme/css/pygments.css" rel="stylesheet" type="text/css"/>
+  <script src="./theme/python/brython.js" type="text/javascript">
+  </script>
+  <script src="./theme/python/brython_stdlib.js" type="text/javascript">
+  </script>
   <link href="https://cqpancoast.com/404.html" rel="canonical"/>
   <script type="application/ld+json">
    {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CQPancoast", "item": "https://cqpancoast.com"}, {"@type": "ListItem", "position": 2, "name": "404", "item": "https://cqpancoast.com/404.html"}]}
   </script>
  </head>
- <body>
+ <body onload="brython()">
   <div id="header">
    <ul id="nav">
     <li>
@@ -30,13 +34,14 @@
    <div class="header_box">
     <h1>
      <a href=".">
-      <img ,="" alt="CQPancoast" height="50" src="https://cqpancoast.com/theme/images/beast_logo.png" width="50"/>
+      <img ,="" alt="CQPancoast" height="50" src="./theme/images/forbidden_logo.png" width="50"/>
+      <img alt="CQPancoast" height="40" src="./theme/images/CQP.png" width="210"/>
      </a>
     </h1>
-    <!-- <h1><a href=".">CQPancoast</a></h1> -->
-    <h2>
-     All about dust.
+    <h2 id="subtitle">
     </h2>
+    <script src="./theme/python/subtitlegen.py" type="text/python">
+    </script>
    </div>
   </div>
   <div id="wrapper">
