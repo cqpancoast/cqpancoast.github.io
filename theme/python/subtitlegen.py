@@ -67,8 +67,5 @@ subtitles = [
     'Languages evolve like creatures. Their capacity for description grows and evolves overtime to suit environments.',
 ]
 
-try:
-    document["subtitle"] <= choice(subtitles)
-except:
-    document["subtitle"] <= "Well, at least we get this far."
+document["subtitle"] <= choice(subtitles)
 
